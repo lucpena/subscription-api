@@ -1,0 +1,12 @@
+GET http://localhost:5500/api/v1/users
+
+###
+
+GET http://localhost:5500/api/v1/users/69d4480b6327568d6286a509
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWQ0NGNhYjU0NjYxNWJiM2U5ZjY5MTEiLCJpYXQiOjE3NzU2MDg0MTIsImV4cCI6MTc3NTY5NDgxMn0.X085hiWcsXL9uD_GasUTbtCZxVNybQD4XzD-Z17UjBM
+
+{
+    "email": "sample2@example.com",
+    "password": "password123"
+}
+
