@@ -1,8 +1,4 @@
-# @lucpena/subscription-api
-
-## Overview
-
-The `@lucpena/subscription-api` package provides a robust set of features to manage subscriptions and user functions effectively. This document outlines the API's capabilities, including authentication, user management, subscription management, and workflows.
+# Subscription API
 
 ## Features
 
@@ -46,11 +42,3 @@ The `@lucpena/subscription-api` package provides a robust set of features to man
 
 4. **Webhooks**
    - `POST /api/webhooks`: Set up a new webhook for subscription events.
-
-## Conclusion
-
-The `@lucpena/subscription-api` offers a comprehensive solution for handling user subscriptions. With robust features and secure management, it accommodates various subscription needs effectively.
-
----
-
-_Last Updated: 2026-04-09 14:22:39 UTC_
