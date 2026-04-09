@@ -1,4 +1,17 @@
-# Subscription API
+<div align="center">
+  <h1>Subscription API</h1>
+  <div>
+    <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white" alt="node.js" />
+    <img src="https://img.shields.io/badge/express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="express.js" />
+    <img src="https://img.shields.io/badge/-MongoDB-13aa52?style=for-the-badge&logo=mongodb&logoColor=white" alt="mongodb" />
+  </div>
+</div>
+
+<br>
+This application is a Subscription Management System API. It can authenticate users with JWT, connect to a database,
+create models and schemas and integrate it with ORMS. This API has Rate Limiting and Bot Protection with Arcjet and
+automated email reminders about the renewal date with Nodemailer and Upstash.
+
 
 ## Features
 
@@ -39,6 +52,50 @@
    - `GET /api/subscriptions`: List all subscriptions.
    - `PUT /api/subscriptions/{id}`: Update a subscription.
    - `DELETE /api/subscriptions/{id}`: Cancel a subscription.
+  
+**Installation**
 
-4. **Webhooks**
-   - `POST /api/webhooks`: Set up a new webhook for subscription events.
+Install the project dependencies using npm:
+
+```bash
+npm install
+```
+
+**Set Up Environment Variables**
+
+Create a new file named `.env.local` in the root of your project and add the following content:
+
+```env
+# PORT
+PORT=5500
+SERVER_URL="http://localhost:5500"
+
+# ENVIRONMENT
+NODE_ENV=development
+
+# DATABASE
+DB_URI=
+
+# JWT AUTH
+JWT_SECRET=
+JWT_EXPIRES_IN="1d"
+
+# ARCJET
+ARCJET_KEY=
+ARCJET_ENV="development"
+
+# UPSTASH
+QSTASH_URL=http://127.0.0.1:8080
+QSTASH_TOKEN=
+
+# NODEMAILER
+EMAIL_PASSWORD=
+```
+
+**Running the Project**
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5500](http://localhost:5500) in your browser or any HTTP client to test the project.
