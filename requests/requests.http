@@ -1,5 +1,5 @@
 POST http://localhost:5500/api/v1/subscriptions
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWQ2ZWE5NjQ1OTkzZGJjODA3MmE3MGYiLCJpYXQiOjE3NzU2OTI0MzgsImV4cCI6MTc3NTc3ODgzOH0.J2h5r34u1Cp14Q-W3q5lzPnYNxh0FukUVqp_iXnnGtA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWQ2ZWE5NjQ1OTkzZGJjODA3MmE3MGYiLCJpYXQiOjE3NzU3NDE4MDgsImV4cCI6MTc3NTgyODIwOH0.UsYyb_T2bIyPhYj30x9vX1iIVbcdY8y_nd65g6RJ1eE
 Content-Type: application/json
 
 {
@@ -15,8 +15,43 @@ Content-Type: application/json
 ###
 
 GET http://localhost:5500/api/v1/subscriptions/user/69d44cab546615bb3e9f6911
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWQ0NGNhYjU0NjYxNWJiM2U5ZjY5MTEiLCJpYXQiOjE3NzU2MTQ5NzksImV4cCI6MTc3NTcwMTM3OX0.fGR04iirrxfHFXXrwKo0SDe37XTuw4VmAc-6tzlgBgY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWQ2ZWE5NjQ1OTkzZGJjODA3MmE3MGYiLCJpYXQiOjE3NzU3NDE4MDgsImV4cCI6MTc3NTgyODIwOH0.UsYyb_T2bIyPhYj30x9vX1iIVbcdY8y_nd65g6RJ1eE
 Content-Type: application/json
 
 ### 
 
+DELETE http://localhost:5500/api/v1/subscriptions/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWQ2ZWE5NjQ1OTkzZGJjODA3MmE3MGYiLCJpYXQiOjE3NzU3NDE4MDgsImV4cCI6MTc3NTgyODIwOH0.UsYyb_T2bIyPhYj30x9vX1iIVbcdY8y_nd65g6RJ1eE
+
+{
+    "name": "Anime Waifus 4.0"
+}
+
+###
+
+DELETE http://localhost:5500/api/v1/subscriptions/69d6f90aab7faeaecf71d14b
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWQ2ZWE5NjQ1OTkzZGJjODA3MmE3MGYiLCJpYXQiOjE3NzU3NDE4MDgsImV4cCI6MTc3NTgyODIwOH0.UsYyb_T2bIyPhYj30x9vX1iIVbcdY8y_nd65g6RJ1eE
+
+###
+
+GET http://localhost:5500/api/v1/subscriptions/
+
+###
+
+PUT http://localhost:5500/api/v1/subscriptions/69d5af1b1c00b6fbbd9e5955
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWQ2ZWE5NjQ1OTkzZGJjODA3MmE3MGYiLCJpYXQiOjE3NzU3NDE4MDgsImV4cCI6MTc3NTgyODIwOH0.UsYyb_T2bIyPhYj30x9vX1iIVbcdY8y_nd65g6RJ1eE
+Content-Type: application/json
+
+{
+    "currency": "EUR"
+}
+
+###
+
+GET http://localhost:5500/api/v1/subscriptions/
+
+###
+
+GET http://localhost:5500/api/v1/subscriptions/69d6ebe83f65d931fda6781d/cancel
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWQ2ZWE5NjQ1OTkzZGJjODA3MmE3MGYiLCJpYXQiOjE3NzU3NDE4MDgsImV4cCI6MTc3NTgyODIwOH0.UsYyb_T2bIyPhYj30x9vX1iIVbcdY8y_nd65g6RJ1eE
