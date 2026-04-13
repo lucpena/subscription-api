@@ -8,7 +8,7 @@
 </div>
 
 <br>
-This application is a Subscription Management System API. It can authenticate users with JWT, connect to a database,
+This application is a Subscription Management System API. It uses JWT Tokens, connect to a database,
 create models and schemas and integrate it with ORMS. This API has Rate Limiting and Bot Protection with Arcjet and
 automated email reminders about the renewal date with Nodemailer and Upstash.
 
